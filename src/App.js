@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Form, Elements, Container } from './components'
-import { Button } from './components/Button'
+import { Form, Elements, Container, Button } from './components'
 
 const App = () => {
   const url = 'https://7ys8lfh4mc.execute-api.eu-west-1.amazonaws.com/beta/coding-challenge/configuration'
@@ -46,7 +45,7 @@ const App = () => {
       <Container>
         <Form {...result} >
           { result.map(data => <Elements {...data} />) }
-          <Button style='-primary' label='Submit' />
+          <Button styles='-primary' label='Submit' />
         </Form>
       </Container>
   )

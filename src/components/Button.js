@@ -1,1 +1,1 @@
-export const Button = (props) => <button className={`button-style ${props.style}`} > {props.label} </button> 
+export const Button = (props) => <button data-testid='button' className={`button-style ${props.styles}`} > {props.label} </button> 

@@ -1,1 +1,1 @@
-export const SubHeader = (props) => <p className='sub-text'> {props.text.en} </p>
+export const SubHeader = (props) => <p data-testid='sub-header' className='sub-text'> {props.text.en} </p>
