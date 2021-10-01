@@ -1,5 +1,3 @@
-import React from 'react'
-
 export const DatePicker = (props) => {
   return (
     <label for={`${props.input}-${props.order}`} className='form-input'>

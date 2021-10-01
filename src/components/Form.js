@@ -1,3 +1,1 @@
-import React from 'react'
-
-export const Form = (props) => <form {...props} />
+export const Form = (props) => <form className='form-container' {...props} />
