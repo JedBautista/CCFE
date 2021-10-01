@@ -1,9 +1,11 @@
 import React from 'react'
-import { Header } from './Header'
-import { Input } from './Input'
-import { Checkbox } from './Checkbox'
-import { DatePicker } from './DatePicker'
-import { Paragraph } from './Paragraph'
+import { 
+  Header,
+  Input,
+  Checkbox,
+  DatePicker,
+  SubHeader
+} from './form-elements'
 
 export const Elements = (props) => {
   
@@ -21,7 +23,7 @@ export const Elements = (props) => {
 
       return <Input {...props} />
     case 'paragraph':
-      return <Paragraph {...props} />
+      return <SubHeader {...props} />
     default:
       return null
   }

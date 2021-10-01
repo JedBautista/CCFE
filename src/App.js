@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Form } from './components/Form'
-import { Elements } from './components/Elements'
+import { Form, Elements, Container } from './components'
 
 const App = () => {
   const url = 'https://7ys8lfh4mc.execute-api.eu-west-1.amazonaws.com/beta/coding-challenge/configuration'
@@ -40,11 +39,14 @@ const App = () => {
     }
   }, [result])
 
+
   return (
     !isLoading &&
-    <Form {...result} >
-      { result.map(data => <Elements {...data} />) }
-    </Form>
+      <Container styles='form-container'>
+        <Form {...result} >
+          { result.map(data => <Elements {...data} />) }
+        </Form>
+      </Container>
   )
 }
 
